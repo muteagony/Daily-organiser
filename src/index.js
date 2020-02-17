@@ -1,8 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import ActivitiesList from "./ActivitiesList";
 
-const App = () => {
-  return <div>Activity here</div>;
-};
+class App extends React.Component {
+  render() {
+    return <ActivitiesList />;
+  }
+}
 
 ReactDOM.render(<App />, document.querySelector("#root"));
